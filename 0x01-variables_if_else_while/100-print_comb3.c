@@ -10,14 +10,14 @@ int main(void)
 
 	for (n = 0 ; n <= 9 ; n++)
 	{
-		for (m = n + 1 ; m <= 9 ; m++)
-		{
+		do {
+			m = n + 1;
 			putchar(n + '0');
 			putchar(m + '0');
 			putchar(',');
 			putchar(' ');
-		}
-	}
+			m++;
+		} while (m <= 9);
 	putchar('\n');
 	return (0);
 }
