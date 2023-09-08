@@ -1,12 +1,13 @@
 #include <stdio.h>
 /**
- * main -Entry point
- * description: print letters
- * return: 0 (success)
+ * main - Entry point
+ * Description: print letters
+ * Return: 0 (success)
 */
 int main(void)
 {
-	char n = 'a', m = 'A';
+	char n = 'a';
+	char m = 'A';
 
 	while (n <= 'z')
 	{
