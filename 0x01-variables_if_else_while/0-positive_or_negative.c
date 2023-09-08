@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  * description: using if else
- * * Result: 0 (Success)
+ * * Return: 0 (Success)
 */
 
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 		printf("%i is positive\n", n);
 	else if (n == 0)
 		printf("%i is zero\n", n);
-	else if (n > 0)
+	else if (n < 0)
 		printf("%i is negative\n", n);
 	return (0);
 }
