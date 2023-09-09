@@ -12,10 +12,10 @@ int main(void)
 	{
 		for (m = n + 1 ; m <= 9 ; m++)
 		{
+			putchar(n + '0');
+			putchar(m + '0');
 			if (n + m != 17)
 			{
-				putchar(n + '0');
-				putchar(m + '0');
 				putchar(',');
 				putchar(' ');
 			}
