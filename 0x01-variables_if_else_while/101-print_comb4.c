@@ -12,12 +12,12 @@ int main(void)
 	{
 		for (m = n + 1 ; n <= 9 ; m++)
 		{
-			for (r = m + 1 ; r <= 9 ; r++)
+			for (r = n + 2 ; r <= 9 ; r++)
 			{
 				putchar(n + '0');
 				putchar(m + '0');
 				putchar(r + '0');
-				if ( m + n + r != 24)
+				if (m + n + r != 24)
 				{
 					putchar(',');
 					putchar(' ');
