@@ -10,14 +10,16 @@ int main(void)
 
 	for (n = 0 ; n <= 9 ; n++)
 	{
-		do {
-			m = n + 1;
-			putchar(n + '0');
-			putchar(m + '0');
-			putchar(',');
-			putchar(' ');
-			m++;
-		} while (m <= 9);
+		for (m = n + 1 ; m <= 9 ; m++)
+		{
+			if (n + m != 17)
+			{
+				putchar(n + '0');
+				putchar(m + '0');
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
 	putchar('\n');
 	return (0);
-}
