@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include <unistd.h>
+#include<main.h>
 /**
- * main - Entry point
+ * _putchar - the function to print
+ * @n: the char
  * description: print
  * Return: 0 (success)
  */
-int main(void)
+int _putchar(char n)
 {
-        putchar('_putchar');
-        putchar('\n');
-        return (0);
+	return (write(1, &n, 1));
 }
