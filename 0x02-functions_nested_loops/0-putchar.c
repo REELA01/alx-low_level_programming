@@ -13,4 +13,5 @@ int main(void)
 		_putchar(ar[a]);
 	_putchar('\n');
 	return (0);
+}
 
