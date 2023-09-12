@@ -13,5 +13,6 @@ int main(void)
 		if ((n % 3) == 0 || (n % 5) == 0)
 		count = count + n;
 	}
-	return (count);
+	printf("%d\n", count);
+	return (0);
 }
