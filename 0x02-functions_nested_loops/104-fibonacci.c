@@ -30,11 +30,11 @@ int main(void)
 	for (c = 1 ; c <= 98 ; c++)
 	{
 		if (f11 > 0)
-			printf("lu", f11);
+			printf("%lu", f11);
 		i = numl(max) - 1 - numl(f1);
 		while (f11 > 0 && i > 0)
 		{
-			printf("%lu", 0);
+			printf("%d", 0);
 			i--;
 		}
 		printf("%lu", f1);
