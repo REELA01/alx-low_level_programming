@@ -1,29 +1,31 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * description: buzz fizz
- * Return: multiples of three print Fizz instead of the number
+ * main - Entry
+ * description: buzz
+ * return: 0 success
 */
 int main(void)
 {
-	int i;
+	int num;
 
-	for (i = 1; i <= 100; i++)
+	while (num++ < 100)
 	{
-		if ((i % 3 == 0) && (i % 5 != 0))
+		if ((num % 3 == 0) && (num % 5 == 0))
+			printf("FizzBuzz ");
+
+		else if ((num % 3) == 0)
 			printf("Fizz ");
-		else if ((i % 5 == 0) && (i % 3 != 0))
+
+		else if ((num % 5) == 0)
 		{
-			if (i != 100)
+			if (num != 100)
 				printf("Buzz ");
 			else
 				printf("Buzz");
 		}
-		else if ((i % 3 == 0) && (i % 5 == 0))
-			printf("FizzBuzz ");
 		else
-			printf("%d ", i);
-		putchar('\n');
+			printf("%d ", num);
+		printf("\n");
 	}
 	return (0);
 }
