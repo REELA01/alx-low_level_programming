@@ -2,14 +2,13 @@
 /**
  * main - Entry
  * description: buzz
- * return: 0 success
+ * Return: 0 success
 */
 int main(void)
 {
 	int num;
 
 	while (num++ < 100)
-	{
 		if ((num % 3 == 0) && (num % 5 == 0))
 			printf("FizzBuzz ");
 
@@ -25,7 +24,6 @@ int main(void)
 		}
 		else
 			printf("%d ", num);
-		printf("\n");
-	}
+	printf("\n");
 	return (0);
 }
