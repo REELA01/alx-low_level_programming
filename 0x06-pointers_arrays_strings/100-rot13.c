@@ -20,11 +20,11 @@ char *rot13(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (ro = 0; ro < 53; ro++)
+		for (ro = 0; ro < 52; ro++)
 		{
-			if (m[ro] == s[i])
+			if (s[i] == m[ro])
 			{
-				s[i] == j[ro];
+				s[i] = j[ro];
 				break;
 			}
 		}
