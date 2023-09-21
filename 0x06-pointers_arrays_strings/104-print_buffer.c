@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * isPrintableASCII - function to find peintable ascci
  * @n: parameter
