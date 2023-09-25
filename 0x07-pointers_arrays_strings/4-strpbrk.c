@@ -1,25 +1,16 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 /**
  * *_strpbrk - strings
  * @s: parameter
  * @accept: parameter
- * Return: count value
+ * Return:i value
 */
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int i, j;
-	char *count;
+	char i;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		for (j = 0; accept[j] != '\0'; j++)
-		{
-			if (s[i] == accept(j))
-			{
-				count = &s[i];
-				return (count);
-			}
-		}
-	}
-	return (0);
+	i = strpbrk(s, accept);
+	return (i);
 }
