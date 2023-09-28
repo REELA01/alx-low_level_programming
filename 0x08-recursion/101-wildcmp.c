@@ -4,7 +4,7 @@
  * @str: parameter
  * Return: int value
 */
-int strlen(char *str)
+int strlen_w(char *str)
 {
 	int len = 0, index = 0;
 
@@ -14,7 +14,7 @@ int strlen(char *str)
 			len++;
 
 		index++;
-		len += strlen(str + index);
+		len += strlen_w(str + index);
 	}
 
 	return (len);
@@ -40,8 +40,8 @@ void iterate_wild(char **w)
 */
 char *postfix_match(char *str, char *postfix)
 {
-	int str_len = strlen(str) - 1;
-	int postfix_len = strlen(postfix) - 1;
+	int str_len = strlen_w(str) - 1;
+	int postfix_len = strlen_w(postfix) - 1;
 
 	if (*postfix == '*')
 		iterate_wild(&postfix);
