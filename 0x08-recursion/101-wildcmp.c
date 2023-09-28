@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strlen - return the length without char
+ * strlen_w - return the length without char
  * @str: parameter
  * Return: int value
 */
