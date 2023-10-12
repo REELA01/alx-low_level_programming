@@ -15,14 +15,14 @@ void print_all(const char * const format, ...)
 	va_start(val, format);
 	while (format && format[i])
 	{
+		j = 0;
 		while (t_arg[j])
 		{
 			if (format[i] == t_arg[j] && c)
 			{
 				printf(", ");
 				break;
-			}
-			j++;
+			} j++;
 		}
 		switch (format[i])
 		{
@@ -46,5 +46,5 @@ void print_all(const char * const format, ...)
 			break;
 		} i++;
 	}
-	printf("\n"), va_end(valist);
+	printf("\n"), va_end(val);
 }
