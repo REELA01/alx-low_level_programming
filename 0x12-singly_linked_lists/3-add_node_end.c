@@ -3,7 +3,7 @@
  * *add_node_end - add node at end
  * @head: parameter
  * @str: parameter
- * Return: node
+ * Return: node value
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
