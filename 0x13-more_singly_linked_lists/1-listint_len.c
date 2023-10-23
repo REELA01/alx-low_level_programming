@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * listint_len - num of elements
- * @i: parameter
+ * @h: parameter
  * Return: i value
 */
 size_t listint_len(const listint_t *h)
